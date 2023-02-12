@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/mycss.css">
+    <title>Pagina Inicial</title>
+</head>
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand font-monospace" href="#">COSTADIAS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse font-monospace letter" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto mb-1g-0">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./tabs/about.html">Sobre</a>
+              <a class="nav-link active" aria-current="page" href="#">Contato</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+    <main class="pt-5 pb-5">
+        <div class="text-center">
+            <h4 class="text-white">
+                Hi, I'm João Luiz
+            </h3>
+            <img class="rounded-circle img-fluid img-thumbnail" src="../imgs/eu.jpeg" alt="">
+            <p class="text-white pt-5">Você pode me encontrar nas seguintes redes sociais:</p>
+
+            <div class="container">
+                <a class="px-4" target="_blank" href="https://www.instagram.com/diasjoao.luiz/"><img width="6%" src="../imgs/insta-icon.png" alt=""></a>
+                <a target="_blank" href="https://github.com/diasjoaoluiz"><img width="6%" src="../imgs/github-icon.png" alt=""></a>
+                <a class="px-4" target="_blank" href="https://www.linkedin.com/in/joão-luiz-da-costa-dias-77067a231/"><img width="6%" src="../imgs/linkedin.png" alt=""></a>
+            </div>
+            <h4 class="pt-5 text-white">Entre em contato me mandando um e-mail:</h4>
+            <section class="container">
+              <form class="form row" method="POST" action="../phps/email.php">
+                <input class="fiel rounded bg-dark text-white" style="min-width: 3px;" name="name" placeholder="Seu nome">
+                <input class="fiel rounded bg-dark text-white" name="email" placeholder="E-mail">
+                <textarea class="field bg-dark text-white" name="mesage" placeholder="Digite sua mensagem aqui" id="" cols="30" rows="10"></textarea>
+                <input class="rounded bg-dark text-white" type="submit" value="Enviar">
+              </form>
+            </section>
+        </div>
+    </main>
+
+
+  <footer class="container-fluid text-muted bg-dark">
+    <div class="row pt-4 pb-4">
+      <div class="col-md-8 mb-8 text-white text-center">
+        Copyright &copy; 2023 - João Luiz da Costa Dias - <a class="text-white" href="#">More about this website</a>
+      </div>
+    </div>
+  </footer>
+    
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
