@@ -17,7 +17,7 @@
           </button>
           <div class="collapse navbar-collapse font-monospace letter" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto mb-1g-0">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               <a class="nav-link active" aria-current="page" href="./tabs/about.html">Sobre</a>
               <a class="nav-link active" aria-current="page" href="#">Contato</a>
             </div>
@@ -27,27 +27,39 @@
     
     <main class="pt-5 pb-5">
         <div class="text-center">
-            <h4 class="text-white">
-                Hi, I'm João Luiz
-            </h3>
-            <img class="rounded-circle img-fluid img-thumbnail" src="../imgs/eu.jpeg" alt="">
-            <p class="text-white pt-5">Você pode me encontrar nas seguintes redes sociais:</p>
-
-            <div class="container">
-                <a class="px-4" target="_blank" href="https://www.instagram.com/diasjoao.luiz/"><img width="6%" src="../imgs/insta-icon.png" alt=""></a>
-                <a target="_blank" href="https://github.com/diasjoaoluiz"><img width="6%" src="../imgs/github-icon.png" alt=""></a>
-                <a class="px-4" target="_blank" href="https://www.linkedin.com/in/joão-luiz-da-costa-dias-77067a231/"><img width="6%" src="../imgs/linkedin.png" alt=""></a>
+            <h3 class="text-white">Hi, I'm João Luiz</h3>
+            <div class="container col-lg-4 col-8">
+              <img class="rounded-circle img-fluid img-thumbnail" src="../imgs/eu.jpeg" alt="">
             </div>
-            <h4 class="pt-5 text-white">Entre em contato me mandando um e-mail:</h4>
-            <section class="container">
-              <form class="form row" method="POST" action="../phps/email.php">
-                <input class="fiel rounded bg-dark text-white" style="min-width: 3px;" name="name" placeholder="Seu nome">
-                <input class="fiel rounded bg-dark text-white" name="email" placeholder="E-mail">
-                <textarea class="field bg-dark text-white" name="mesage" placeholder="Digite sua mensagem aqui" id="" cols="30" rows="10"></textarea>
-                <input class="rounded bg-dark text-white" type="submit" value="Enviar">
+            <div class="container">
+              <div class="row">
+                <div class="bg-secondary col-lg-4">
+                  <p class="pt-5 text-white p-text fs-1">SIGA-ME:</p>
+                <div class="container text-start">
+                  <a class="pe-2" target="_blank" href="https://www.instagram.com/diasjoao.luiz/"><img width="15%" src="../imgs/insta-icon.png" alt=""></a>
+                  <a class="m-2" target="_blank" href="https://github.com/diasjoaoluiz"><img width="15%" src="../imgs/github-icon.png" alt=""></a>
+                  <a class="m-2" target="_blank" href="https://www.linkedin.com/in/joão-luiz-da-costa-dias-77067a231/"><img width="15%" src="../imgs/linkedin.png" alt=""></a>
+              </div>
+            </div>
+            <section class="container pt-5 text-center col-lg-8">
+              <p class="fs-2 text-uppercase text-white">Formulário de contato</p>
+              <form class="row" method="POST" action="../phps/email.php">
+                <div class="pb-3">
+                  <input class="rounded bg-dark text-white col-12 col-lg-10" style="min-width: 3px;" name="name" placeholder="Seu nome">
+                </div>
+                <div class="pb-3">
+                  <input class="rounded bg-dark text-white col-12 col-lg-10" name="email" placeholder="E-mail">
+                </div>
+                <div class="pb-3">
+                  <textarea class="bg-dark text-white col-12 col-lg-10" name="mesage" placeholder="Digite sua mensagem aqui" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="pb-3">
+                  <input class="rounded bg-dark text-white col-12 col-lg-10" type="submit" value="Enviar">
+                </div>
               </form>
             </section>
-        </div>
+          </div>
+          </div>
     </main>
 
 
@@ -60,5 +72,6 @@
   </footer>
     
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap/js/myjs.js"></script>
 </body>
 </html>
